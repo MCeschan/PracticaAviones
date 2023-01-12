@@ -19,5 +19,10 @@ namespace LibreriaAviones
         public string Piloto { get; set; }
         public string Copiloto { get; set; }
         public string Azafata { get; set; }
+
+        public virtual string VerPropiedades()
+        {
+            return "El Piloto es " + Piloto + ", el Copiloto es " + Copiloto + " y la Azafata es " + Azafata;
+        }
     }
 }

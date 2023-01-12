@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaAviones
 {
-    public abstract class AvionCarga : Avion
+    public class AvionCarga : Avion
     {
         public int Peso { get; set; }
         public string TipoMercaderia { get; set; }
@@ -14,6 +14,14 @@ namespace LibreriaAviones
         {
             this.Peso = Peso;
             this.TipoMercaderia = TipoMercaderia;
+        }
+        public override string Aterriza()
+        {
+            return "El avión aterriza a las 10hs";
+        }
+        public override string Despega()
+        {
+            return "El avión despega a las 4hs";
         }
     }
 }
